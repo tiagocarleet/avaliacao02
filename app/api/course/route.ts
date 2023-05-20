@@ -1,4 +1,4 @@
-import { getAllCourse } from "/app/model/CourseService"
+import { getAllCourse } from "@/app/model/CourseService"
 import { NextResponse } from "next/server"
 
 export async function GET(){
