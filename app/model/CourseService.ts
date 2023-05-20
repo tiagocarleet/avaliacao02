@@ -8,3 +8,7 @@ export async function getAllCourse(){
 export async function addCourse(ID:string, name:string, description:string){
     await sql`INSERT INTO course values(${ID}, ${name}, ${description});`
 }
+
+export async function deleteCourse(id:string){
+    await sql `DELETE FROM course where id=${id};`
+}
