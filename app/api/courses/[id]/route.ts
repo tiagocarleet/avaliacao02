@@ -14,4 +14,5 @@ export async function UPDATE(request:Request, {params}: any){
 
     console.log(params.id)
     updateCourse(params.id)
+    return NextResponse.json({UPDATE: "ok"})
 }

@@ -16,6 +16,7 @@ export async function POST(request: Request){
 }
 
 export async function PUT(request: Request){
+    console.log("Acessou PUT...")
     const course = await request.json()
     updateCourse(course.ID)
     return NextResponse.json({sucess : "ok"})
