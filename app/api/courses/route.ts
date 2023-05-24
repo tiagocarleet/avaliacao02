@@ -1,4 +1,5 @@
-import { getAllCourse, addCourse } from "@/app/model/CourseService"
+import { getAllCourse, addCourse, updateCourse } from "@/app/model/CourseService"
+import { request } from "http"
 import { NextResponse } from "next/server"
 
 export async function GET(){
@@ -14,3 +15,8 @@ export async function POST(request: Request){
 
 }
 
+export async function PUT(request: Request){
+    const course = await request.json()
+    updateCourse(course.ID)
+    return NextResponse.json({sucess : "ok"})
+}
