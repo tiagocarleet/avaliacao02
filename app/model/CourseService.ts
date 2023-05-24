@@ -12,3 +12,7 @@ export async function addCourse(ID:string, name:string, description:string){
 export async function deleteCourse(id:string){
     await sql `DELETE FROM course where id=${id};`
 }
+
+export async function updateCourse(id:string){
+    await sql `UPDATE course SET name = 'newName' WHERE id = ${id};`
+}
