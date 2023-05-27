@@ -2,6 +2,6 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <h2>Avaliação 02</h2>
+    <h2 className='text-center mt-16 bg-slate-300'> Avaliação 02</h2>
   )
 }
