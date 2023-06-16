@@ -15,7 +15,7 @@ export default async function EditCourse(params:any){
 
     async function updateCourse(formData: FormData){
         'use server'
-        const id = formData.get("id") as string;
+        
         const name = formData.get("name") as string;
         const description = formData.get("description") as string;
         await updateCourseById(id, name, description)
@@ -27,7 +27,6 @@ export default async function EditCourse(params:any){
         <>
         <h1>Editar Curso</h1>
         <form action="">
-                <input type="text" name="id" defaultValue = {course.id} placeholder="Digite o ID do Curso" />
                 <input type="text" name="name" defaultValue = {course.name} placeholder="Digite o nome do Curso" />
                 <input type="text" name="description" defaultValue = {course.description} placeholder="Digite a descrição do Curso" />
                 <button formAction={updateCourse} className="bg-slate-600 text-white px-3 py-2 rounded-sm">Salvar</button>

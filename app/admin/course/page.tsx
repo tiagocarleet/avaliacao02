@@ -3,9 +3,7 @@ import { getAllCourse } from "@/app/model/CourseService";
 export const revalidate = 0
 
 export default async function CoursePage(){
-    const courses = await getAllCourse();
-
-   
+    const courses = await getAllCourse();   
 
     return (
         <>
