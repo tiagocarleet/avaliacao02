@@ -9,7 +9,8 @@ export async function addCourse(id:string, name:string, description:string){
     await sql`INSERT INTO course values(${id}, ${name}, ${description});`
 }
 
-export async function deleteCourse(id:string){
+export async function deleteCourseById(id:string){
+    console.log("xxx");
     await sql `DELETE FROM course where id=${id};`
 }
 
@@ -19,5 +20,6 @@ export async function getCourseById(id:string){
 }
 
 export async function updateCourseById(id:string, name:string, description:string){
+    console.log("entrou na update");
     await sql `UPDATE course SET name = ${name}, description = ${description} WHERE id = ${id};`
 }
