@@ -5,8 +5,9 @@ export async function getAllCordinator(){
     return cordinator
 }
 
-export async function addCordinator(id:string, name:string, email:string){
-    await sql`INSERT INTO cordinators values(${id}, ${name}, ${email});`
+export async function addCordinator(name:string, email:string){
+    console.log("Entrou da add", name, email)
+    await sql`INSERT INTO cordinators values(${name}, ${email});`
 }
 
 export async function deleteCordinatorById(id:string){

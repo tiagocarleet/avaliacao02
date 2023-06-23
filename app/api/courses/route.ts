@@ -1,4 +1,5 @@
 import { getAllCourse, addCourse, updateCourseById } from "@/app/model/CourseService"
+import { addCordinator } from "@/app/model/cordinatorService"
 import { request } from "http"
 import { NextResponse } from "next/server"
 
@@ -10,6 +11,6 @@ export async function GET(){
 
 export async function POST(request: Request){
     const course = await request.json()
-    addCourse(course.ID, course.name, course.description)
+    addCourse(course.ID, course.name, course.email)
     return NextResponse.json({sucess : "ok"})
 }
