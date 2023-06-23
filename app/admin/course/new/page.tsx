@@ -13,8 +13,8 @@ export default function NewCourse(){
         <div>
         <h1 className="bg-slate-600 md:bg-red-700 xl:bg-green-600">Cadastro de Cursos</h1>
         <form action={saveCourse}>
-            <input type="text" name="id" placeholder="Digite o ID do curso:"/>
-            <input type="text" name="name" placeholder="Digite o nome do curso:"/>
+            <input type="text" name="id" placeholder="Digite o ID do curso:"/><br/>
+            <input type="text" name="name" placeholder="Digite o nome do curso:"/><br/>
             <input type="text" name="description" placeholder="Descrição do curso:"/>
             <button type="submit" className="bg-slate-600 text-white px3 p-y2 rounded-sm" >Salvar</button>
         </form>

@@ -13,9 +13,3 @@ export async function POST(request: Request){
     addCourse(course.ID, course.name, course.description)
     return NextResponse.json({sucess : "ok"})
 }
-
-//export async function PUT(request: Request) {
-//    const course = await request.json();
-//    await updateCourse(course.ID);
-//    return NextResponse.json({ success: "ok" });
-//}
