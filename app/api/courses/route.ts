@@ -11,6 +11,6 @@ export async function GET(){
 
 export async function POST(request: Request){
     const course = await request.json()
-    addCourse(course.ID, course.name, course.email)
+    addCourse(course.name, course.email)
     return NextResponse.json({sucess : "ok"})
 }
