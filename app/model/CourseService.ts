@@ -6,7 +6,7 @@ export async function getAllCourse(){
 }
 
 export async function addCourse(name:string, description:string){
-    await sql`INSERT INTO course values(${id}, ${name}, ${description});`
+    await sql`INSERT INTO course values(${name}, ${description});`
 }
 
 export async function deleteCourseById(id:string){
