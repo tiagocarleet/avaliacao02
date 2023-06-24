@@ -5,7 +5,7 @@ export async function getAllCourse(){
     return courses
 }
 
-export async function addCourse(id:string, name:string, description:string){
+export async function addCourse(name:string, description:string){
     await sql`INSERT INTO course values(${id}, ${name}, ${description});`
 }
 
