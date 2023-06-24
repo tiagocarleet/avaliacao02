@@ -20,5 +20,3 @@ export default function NewCourse(){
         </div>
     )
 }
-
-//const id = formData.get("id")
