@@ -5,10 +5,9 @@ export default function NewCordinator(){
     async function saveCordinator(formData: FormData){
         'use server'
         console.log("Entrou da save")
-        const id = formData.get("id")
         const name = formData.get("name") as string 
         const email = formData.get("email") as string
-        await addCordinator(id, name, email)
+        await addCordinator(name, email)
     }
     return (
         <div>
