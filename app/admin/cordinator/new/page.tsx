@@ -13,7 +13,6 @@ export default function NewCordinator(){
         <div>
         <h1 className="bg-slate-600 md:bg-red-700 xl:bg-green-600">Cadastro de Coordenadores</h1>
         <form action={saveCordinator}>
-            <input type="text" name="id" placeholder="Digite o ID:"/><br />
             <input type="text" name="name" placeholder="Digite o nome:"/><br />
             <input type="text" name="email" placeholder="Digite o email:"/>
             <button type="submit" className="bg-slate-600 text-white px3 p-y2 rounded-sm" >Salvar</button>
