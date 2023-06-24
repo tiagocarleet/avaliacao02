@@ -4,7 +4,6 @@ export default function NewCourse(){
     async function saveCourse(formData: FormData){
         'use server'
         console.log("xxxxxx")
-        
         const name = formData.get("name") as string 
         const description = formData.get("description") as string
         await addCourse(name, description)

@@ -1,8 +1,8 @@
 import { sql } from "@vercel/postgres";
 
 export async function getAllCordinator(){
-    const { rows:cordinator } = await sql `SELECT * from cordinators;`;
-    return cordinator
+    const { rows:cordinators } = await sql `SELECT * from cordinators;`;
+    return cordinators   
 }
 
 export async function addCordinator(name:string, email:string){

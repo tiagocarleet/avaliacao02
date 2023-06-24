@@ -3,7 +3,7 @@ import { getAllCordinator } from "@/app/model/cordinatorService";
 export const revalidate = 0
 
 export default async function CordinatorPage(){
-    const cordinators = await getAllCordinator();   
+    const cordinators = await getAllCordinator(); 
 
     return (
         <>
